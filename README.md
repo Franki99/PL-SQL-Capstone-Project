@@ -6,6 +6,7 @@
 - [Project Owner](#project-by)
 - [Problem Statement](#problem-statement)
 - [System Architecture](#system-architecture)
+- [Business Process Model](#business-process-model)
 - [Key Features](#key-features)
 - [Implementation Highlights](#implementation-highlights)
 - [Implentation Details](#implementation-details)
@@ -16,7 +17,7 @@ The Ihuzo HR System is a comprehensive Human Resources Management System designe
 
 ## Project By
 
-Divanni Ntaganira
+Divanni Ntaganira ID: 25312
 
 ## Problem Statement
 
@@ -38,8 +39,6 @@ Additionally, the system needed to:
 
 The system enforces organizational policies, such as restricting database modifications during business hours and holidays to maintain data integrity and security.
 
-[Read the complete problem statement here](PROBLEM_STATEMENT.md)
-
 ## System Architecture
 
 The Ihuzo HR System is built on Oracle Database with a sophisticated PL/SQL backend. The architecture includes:
@@ -53,6 +52,14 @@ The Ihuzo HR System is built on Oracle Database with a sophisticated PL/SQL back
 - **Security Layer**: Audit logging, operation restrictions, and sensitive data protection
 - **Business Logic Layer**: Procedures, packages, and triggers to enforce business rules
 - **Data Storage Layer**: Normalized tables, indices, and constraints for data integrity
+
+## Business Process Model
+
+The recruitment process was selected for modeling as it represents a critical function that directly impacts organizational performance through talent acquisition and showcases complex cross-departmental information flows.
+
+[Read the complete business process model here](./Docs/ihuzo-hr-bpm-report.pdf)
+
+![System Architecture](./screenshots/recruitment-process-bpmn.jpg)
 
 ## Key Features
 
@@ -597,12 +604,16 @@ END trg_salary_audit_compound;
 - PL/SQL Oracle database creation
 - Oracle Enterprise Manager (OEM) implementation
 
+[Read the complete phase 4 report here](./Docs/phase4-report.md)
+
 ### Phase 5: Table Implementation and Data Insertion
 
 - Table Creation with appropriate columns and data types.
 - Data Insertion
 - Data Integrity Verification
 - Package implementation for modular organization
+
+[Read the complete phase 5 report here](./Docs/phase5-report.md)
 
 ### Phase 6: Database Interaction and Transactionsg
 
@@ -612,7 +623,11 @@ END trg_salary_audit_compound;
 - Use cursors to retrieve data from tables
 - Retention policy implementation
 
+[Read the complete phase 6 report here](./Docs/phase6-report.md)
+
 ### Phase 7: Advanced Database Programming and Auditing
 
 - Trigger Implementation
 - Auditing with Restrictions and Tracking
+
+[Read the complete phase 4 report here](./Docs/phase7-report.md)
