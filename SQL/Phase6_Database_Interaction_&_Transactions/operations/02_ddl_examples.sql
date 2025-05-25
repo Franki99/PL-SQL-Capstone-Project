@@ -1,5 +1,5 @@
 -- DDL Example 1: CREATE - Add a new table for tracking recruitment campaigns
-CREATE TABLE recruitment_campaigns (
+CREATE TABLE recruitment_campaignss (
     campaign_id NUMBER PRIMARY KEY,
     campaign_name VARCHAR2(100) NOT NULL,
     description VARCHAR2(500),
@@ -19,18 +19,17 @@ CREATE TABLE recruitment_campaigns (
 CREATE SEQUENCE recruitment_campaigns_seq START WITH 1 INCREMENT BY 1;
 
 -- DDL Example 2: ALTER - Add columns to an existing table
-ALTER TABLE job_postings
+ALTER TABLE test_connection
 ADD (
     campaign_id NUMBER,
-    cost_per_click NUMBER(10,2),
+    cost_per_click NUMBER(11,3),
     total_views NUMBER DEFAULT 0,
-    total_applications NUMBER DEFAULT 0,
-    CONSTRAINT fk_posting_campaign FOREIGN KEY (campaign_id) REFERENCES recruitment_campaigns(campaign_id)
+    total_applications NUMBER DEFAULT 0
 );
 
 -- DDL Example 3: CREATE INDEX - Add index for performance
-CREATE INDEX idx_posting_campaign ON job_postings(campaign_id);
-CREATE INDEX idx_campaign_dates ON recruitment_campaigns(start_date, end_date);
+CREATE INDEX idx_posting_campaignns ON test_connection(campaign_id);
+CREATE INDEX idx_campaign_date ON recruitment_campaigns(start_date, end_date);
 
 -- DDL Example 4: CREATE VIEW - Create a view for easier reporting
 CREATE OR REPLACE VIEW vw_application_status AS
